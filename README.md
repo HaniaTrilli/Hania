@@ -1,56 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){int n;int A[n][n],C[n][n],j,i;
-
-printf("enter n:");
-scanf("%d",&n);
-printf("\n");
-
-for(i=0;i<n;i++){
-    for(j=0;j<n;j++){
-        scanf("%c\t",&A[i][j]);
-
-    }
-}
-printf(" A:");
-
-printf("\n");
-
-for(i=0;i<n;i++) {
-
-    for(j=0;j<n;j++){
-        printf("%c\t",A[i][j]);
-
-    }
-            printf("\n");
-}
-
-
-for(i=1;i<n;i++){
-    for(j=0;j<n-i;j++){
-    C[i][j]=A[i][j];
-
-    }
-}
-
-
-
-
-printf("C:");
-
-printf("\n");
-
-for(i=0;i<n;i++) {
-
-    for(j=0;j<n;j++){
-        printf("%c\t",C[i][j]);
-
-    }
-            printf("\n");
-}
-
-
-
-    return 0;
+# include <stdio.h>
+int main () {
+     int  A [4] [4]  ={ {1, 5, 9, 13 } , {2, 6, 10, 14 } , {3, 7, 11, 15} , {4, 8, 12, 16} } ;
+int T , i , j ;
+    for(i=0 ;i<4; i++){
+       for(j=0; j<4;j++){
+           printf ("%d\t" , A[i][j]);
+            }
+      printf("\n");
+} 
+for(i=0 ; i<4 ; i++){
+      for(j=0 ; j<4 ; j++){
+            A[i][j]=A[j][i];
+                T=A[j][i];
+        }
+   } 
+return 0;
 }
