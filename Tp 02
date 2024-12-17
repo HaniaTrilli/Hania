@@ -4,8 +4,6 @@
 
 char *ChargerChaine(int N) {
     char *chaine = (char*)malloc(N+1); 
-    fgets(chaine, N+1, stdin);
-    chaine[strcspn(chaine, "\n")] = 0; 
     return chaine;
 }
 
